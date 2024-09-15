@@ -5,5 +5,4 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    # MongoDB URI - replace localhost and db name with your values
-    MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017/faqs_db')
+    MONGO_URI = os.getenv('MONGO_URI', 'your_mongoDb_connection_String')

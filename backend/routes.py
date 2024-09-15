@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from flask_pymongo import PyMongo
 from bson import ObjectId
-from app import mongo  # Ensure this import matches your app structure
+from app import mongo 
 
 faq_blueprint = Blueprint('faqs', __name__)
 
@@ -10,7 +10,7 @@ def get_faqs():
     faqs = mongo.db.faqs.find()
     result = []
     for faq in faqs:
-        faq['_id'] = str(faq['_id'])  # Convert ObjectId to string
+        faq['_id'] = str(faq['_id'])  # ConvertingObjectId to string
         result.append(faq)
     return jsonify(result)
 
@@ -26,5 +26,5 @@ def create_faq():
         'image': data.get('image', 'default-image-url')
     }
     result = mongo.db.faqs.insert_one(faq)
-    faq['_id'] = str(result.inserted_id)  # Convert ObjectId to string
+    faq['_id'] = str(result.inserted_id)  # Convert ObjectIdto string
     return jsonify(faq), 201
