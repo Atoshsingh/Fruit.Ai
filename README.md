@@ -22,7 +22,7 @@ This project is a multi-page web application with various features such as user 
 - **Responsive Design:** Fully mobile-friendly UI.
 - **Chatbot Interaction:** Simple chatbot to simulate real-time conversation.
 - **Translation:** Translate text between different languages.
-- **FAQs:** Create, read, update, and delete FAQs with a user-friendly interface.
+- **FAQs:** Create, read, FAQs with a user-friendly interface.
 - **About Page:** General information about the application.
 
 ## Tech Stack
@@ -54,9 +54,6 @@ Translate text between multiple popular languages. Select the input and output l
 The FAQ page implements basic CRUD operations:
 - **Create** a new FAQ entry.
 - **Read** and display FAQs.
-- **Update** existing FAQs.
-- **Delete** FAQs as required.
-
 ### About Page
 Displays general information about the web application and its purpose.
 
