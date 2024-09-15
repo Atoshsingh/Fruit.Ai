@@ -4,6 +4,12 @@ import update from '../../assets/fruitsPic/update.png';
 import styles from "./FaQ.module.css";
 import { ToastContainer, toast } from 'react-toastify';
 const Card = ({ image, name, description }) => {
+  function del(){
+    alert("It will delete soon")
+  }
+  function Upd(){
+    alert("Wait for Prompt to updated")
+  }
   return (
     <div className={styles.mainCard}>
       <div className={styles.first}>
@@ -15,8 +21,8 @@ const Card = ({ image, name, description }) => {
         <div className={styles.content}>{description}</div>
       </div>
       <div className={styles.third}>
-        <img className={styles.btns} src={deleted} />
-        <img className={styles.btns} src={update} />
+        <img className={styles.btns} onClick={del} src={deleted} />
+        <img className={styles.btns}  onClick={Upd} src={update} />
       </div>
     </div>
   )
