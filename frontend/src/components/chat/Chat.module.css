@@ -1,0 +1,22 @@
+.mainDiv{
+    height:100vh;
+    width: 100vw;
+    background:linear-gradient( to right, #e5bcff , #68f2ff);
+}
+
+.innerDiv{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    color:white;
+}
+
+.chat{
+    color: #a848e3;
+}

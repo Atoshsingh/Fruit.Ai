@@ -1,0 +1,108 @@
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  font-family: 'Poppins', sans-serif;
+}
+
+.translationDiv {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  transition: transform 0.3s;
+}
+
+.translationDiv:hover {
+  transform: scale(1.02);
+}
+
+.heading {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.languageSelector {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.languageSelector label {
+  font-size: 1rem;
+  color: #555;
+  margin-right: 10px;
+}
+
+.selectBox {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #a777e3;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.selectBox:focus {
+  border-color: #6e8efb;
+}
+
+.inputBox {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #a777e3;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  min-height: 100px;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.inputBox:focus {
+  border-color: #6e8efb;
+}
+
+.translateButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.translateButton:hover {
+  background: linear-gradient(135deg, #a777e3, #6e8efb);
+  transform: translateY(-3px);
+}
+
+.resultField {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 1.1rem;
+  color: #4a4a4a;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.errorField {
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}

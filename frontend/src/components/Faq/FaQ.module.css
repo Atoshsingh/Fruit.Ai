@@ -1,0 +1,205 @@
+.mainDiv {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #e5bcff, #68f2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imageCss{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.btns{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+}
+.submitBtn{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px ;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.inputAnswer{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.inputAnswer:focus{
+ outline:none;
+}
+.inputQuestion{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+.inputQuestion:focus{
+    outline: none;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #68f2ff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #00656e;
+  }
+
+.innerDiv{
+    width: 90%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    gap:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainCard {
+    width:80%;
+    height: 160px;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    background: linear-gradient(to right, #ce7fff, #14ebff);
+    gap:5px;
+}
+.mainCard:hover{
+    transform: scale(1.05);
+    transition-duration:500ms;
+}
+/* ------------------------------------------ */
+.first {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    flex: 1;
+    text-align: center;
+    font-family: cursive;
+}
+/* ------------------------------------------ */
+.second {
+    /* padding:; */
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    font: 1rem;
+    flex:1;
+    width: 90%;
+    text-align: center;
+    font-weight: 900;
+    color:white;
+}
+.content {
+    
+    flex:4;
+    width: 90%;
+    text-align: center;
+    font-size: 0.9rem;
+    text-wrap: wrap;
+
+}
+
+/* will work on more then 750 */
+@media only screen and (max-width: 350px) { 
+    .content{
+        font-size: 0.8rem;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+}
+@media only screen and (min-width: 750px) { 
+    .mainCard {
+        overflow-x: hidden;
+        width: 60%;
+        height: 150px;
+        border-radius: 26px;
+        padding: 30px;
+        display: flex;
+        gap: 7px;
+    }
+    .content{
+        font-size: 1rem;
+    }
+    .heading{
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (min-width: 1150px) { 
+    .mainCard {
+        overflow-x: hidden;
+        width: 40%;
+        height: 140px;
+        border-radius: 30px;
+        padding: 30px;
+        display: flex;
+        gap: 10px;
+    }
+    .content{
+        font-size: 1.2rem;
+    }
+    .heading{
+        font-size: 1.3rem;
+    }
+}
+.dynamicContent{
+    text-align: center;
+    margin-top: 20px;
+    height: 300px ;
+    width: 50%;
+    background-color: #4dccd7;
+    border-radius:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    box-shadow: 3px 3px 10px 1px rgb(181, 180, 180);
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
